@@ -1,5 +1,5 @@
 {% set name = "filesdb" %}
-{% set version = "1.3.0" %}
+{% set version = "1.2.0" %}
 {% set hash_type = "sha256" %}
 {% set hash_value = "4d11759cc266a4ce9dd8eb54b15228de25c66958f3e1f48a0eb8a0d8aab79f64" %}
 
