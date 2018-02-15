@@ -1,7 +1,7 @@
 {% set name = "filesdb" %}
-{% set version = "1.6.0" %}
+{% set version = "1.7.0" %}
 {% set hash_type = "sha256" %}
-{% set hash_value = "6762fe8f60677bcee5a077fdf3cb87c29348a42dd4f32b0a8296e714552bf45c" %}
+{% set hash_value = "daf2bd4cd3b087682a296597f1fc47ee77270d500345a0474d1efc59b00bbf05" %}
 
 package:
   name: '{{ name|lower }}'
