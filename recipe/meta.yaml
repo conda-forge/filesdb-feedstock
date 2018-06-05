@@ -28,6 +28,8 @@ requirements:
     - python
 
 test:
+  source_files:
+    - test_filesdb.py
   imports:
     - filesdb
   commands:
