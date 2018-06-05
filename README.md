@@ -14,14 +14,16 @@ Summary: A simple tool for tracking files
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/filesdb-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/filesdb-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/filesdb-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/filesdb-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/filesdb-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/filesdb-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/filesdb-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/filesdb-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/filesdb-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/filesdb-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/filesdb-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/filesdb-feedstock/branch/master)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/filesdb/badges/version.svg)](https://anaconda.org/conda-forge/filesdb)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/filesdb/badges/downloads.svg)](https://anaconda.org/conda-forge/filesdb)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-filesdb-green.svg)](https://anaconda.org/conda-forge/filesdb) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/filesdb.svg)](https://anaconda.org/conda-forge/filesdb) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/filesdb.svg)](https://anaconda.org/conda-forge/filesdb) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/filesdb.svg)](https://anaconda.org/conda-forge/filesdb) |
 
 Installing filesdb
 ==================
