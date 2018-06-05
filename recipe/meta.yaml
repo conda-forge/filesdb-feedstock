@@ -31,7 +31,7 @@ test:
   imports:
     - filesdb
   commands:
-    - filesdb test
+    - pytest test_filesdb.py
   requires:
     - pytest
 
