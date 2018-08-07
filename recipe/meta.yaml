@@ -16,16 +16,15 @@ build:
   number: 0
   entry_points:
     - filesdb = filesdb.__main__:main
-  script: python setup.py install  --single-version-externally-managed --record=record.txt
-  skip: True  # [py2k]
-
+  script:  python -m pip install . --no-deps --ignore-installed
+  
 requirements:
   build:
-    - python
-    - setuptools
+    - python >=3.4
+    - pip
     - pytest-runner
   run:
-    - python
+    - python >=3.4
 
 test:
   source_files:
