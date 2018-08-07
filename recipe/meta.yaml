@@ -1,7 +1,7 @@
 {% set name = "filesdb" %}
-{% set version = "2.2.1" %}
+{% set version = "2.2.2" %}
 {% set hash_type = "sha256" %}
-{% set hash_value = "8c1dc1a6a43ce76752aa39f20c4ffb67fa593429d499ba13b6ca7d5930ba2dd9" %}
+{% set hash_value = "f654afa6427c8aa86bdc4d94012321b767f1a0ba60c41e5613cc1389fe69200e" %}
 
 package:
   name: '{{ name|lower }}'
@@ -13,7 +13,7 @@ source:
   '{{ hash_type }}': '{{ hash_value }}'
 
 build:
-  number: 1
+  number: 0
   noarch: python
   entry_points:
     - filesdb = filesdb.__main__:main
