@@ -1,7 +1,5 @@
 {% set name = "filesdb" %}
 {% set version = "2.2.2" %}
-{% set hash_type = "sha256" %}
-{% set hash_value = "f654afa6427c8aa86bdc4d94012321b767f1a0ba60c41e5613cc1389fe69200e" %}
 
 package:
   name: '{{ name|lower }}'
@@ -9,23 +7,23 @@ package:
 
 source:
   fn: '{{ name }}-{{ version }}.tar.gz'
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  '{{ hash_type }}': '{{ hash_value }}'
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  'sha256': 'f654afa6427c8aa86bdc4d94012321b767f1a0ba60c41e5613cc1389fe69200e'
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - filesdb = filesdb.__main__:main
   script:  python -m pip install . --no-deps --ignore-installed
   
 requirements:
-  build:
-    - python >=3.4
+  host:
+    - python {{ python_min }}
     - pip
     - pytest-runner
   run:
-    - python >=3.4
+    - python >={{ python_min }}
 
 test:
   source_files:
@@ -36,6 +34,7 @@ test:
     - pytest test_filesdb.py
   requires:
     - pytest
+    - python {{ python_min }}
 
 about:
   home: https://github.com/stilley2/filesdb
